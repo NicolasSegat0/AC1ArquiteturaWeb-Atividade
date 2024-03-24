@@ -1,3 +1,10 @@
+*Utilizando JPA - Aula06*
+
+Como parte das atividades que vão formular a AC!, nesta branch as informações dos alunos serão salbas no em memória pelo JPA.*
+
+
+
+
 *Prints com os testes HTTP (POST, PUT, GET, DELETE)*
 
 **GET

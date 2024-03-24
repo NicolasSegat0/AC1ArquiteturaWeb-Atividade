@@ -1,65 +1,56 @@
 package com.example.AC1ArquiteturaWeb.Model;
 
+@Entity
 public class Aluno {
-    private Long id;
-    private String nome;
-    private String matricula;
-    private String curso;
-    private int idade;
+  @ID
+  @GeneratedValue(strategy = GenerationType>INDENTITY)
+  private Long id; 
+  private String nome; 
+  private String matricula; 
+  private String curso; 
+  private int idade; 
 
-    public Aluno(String nome, String matricula, String curso, int idade) {
-        this.nome = nome;
-        this.matricula = matricula;
-        this.curso = curso;
-        this.idade = idade;
-    }
+  public Long getId() {
+    return id;
+}
 
-    public String toString() {
-        return "Aluno{" +
-                "Nome='" + nome + '\'' +
-                ", Matricula='" + matricula + '\'' +
-                ", Curso='" + curso + '\'' +
-                ", Idade='" + idade + '\'' +
-                '}';
-    }
+public void setId(Long id) {
+    this.id = id;
+}
 
-    public Long getId() {
-        return id;
-    }
+public String getNome() {
+    return nome;
+}
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+public void setNome(String nome) {
+    this.nome = nome;
+}
 
-    public String getNome() {
-        return nome;
-    }
+public String getMatricula() {
+    return matricula;
+}
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+public void setMatricula(String matricula) {
+    this.matricula = matricula;
+}
 
-    public String getMatricula() {
-        return matricula;
-    }
+public String getCurso() {
+    return curso;
+}
 
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
-    }
+public void setCurso(String curso) {
+    this.curso = curso;
+}
 
-    public String getCurso() {
-        return curso;
-    }
+public int getIdade() {
+    return idade;
+}
 
-    public void setCurso(String curso) {
-        this.curso = curso;
-    }
+public void setIdade(int idade) {
+    this.idade = idade;
+}
 
-    public int getIdade() {
-        return idade;
-    }
 
-    public void setIdade(int idade) {
-        this.idade = idade;
-    }
+
+
 }
